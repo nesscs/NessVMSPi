@@ -3,11 +3,6 @@
 #Set Machine Hostname to Last 4 digits of Eth0
 macaddy=$(cat /sys/class/net/enp3s0/address | tr -d ':' | grep -o '....$')
 sudo hostnamectl set-hostname NessVMS-$macaddy
-#Set Repo's to Australia
-sudo sed -i 's|http://archive.|http://au.archive.|g' /etc/apt/sources.list
-sudo apt update
-#Disable Screensaver
-gsettings set org.gnome.desktop.session idle-delay 86400
 #Wait for Auto updgrades to finish
 echo -e "\e[7mWaiting for Auto Upgrades to finish\e[0m"
 echo "This may take a while"
@@ -52,10 +47,7 @@ echo -e "\e[7mSet Wallpaper\e[0m"
 sudo wget "https://github.com/kvellaNess/NxVMS/raw/master/NxBG.png" -P /opt/Ness/Wallpaper
 sudo wget "https://github.com/kvellaNess/NxVMS/raw/master/NxLock.png" -P /opt/Ness/Wallpaper
 #Set Wallpaper
-gsettings set org.gnome.desktop.background picture-uri 'file://///opt/Ness/Wallpaper/NxBG.png'
-gsettings set org.gnome.desktop.screensaver picture-uri 'file://///opt/Ness/Wallpaper/NxLock.png'
-#ReEnable Screensaver
-gsettings set org.gnome.desktop.session idle-delay 600
+pcmanfm --set-wallpaper /opt/Ness/Wallpaper/NxBG.png'
 #Finished!
 echo ""
 echo ""
