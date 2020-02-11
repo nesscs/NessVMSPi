@@ -66,8 +66,9 @@ Enter your password when prompted. Once the script completes, reboot the Raspber
 Once the Pi reboots, continue the Nx Witness setup from another machine running the NxWitness Client.
 
 ## Reference
-https://support.networkoptix.com/hc/en-us/articles/360035982154
-https://support.networkoptix.com/hc/en-us/articles/360033842053
+How to build an NVR with Nx Witness VMS: https://support.networkoptix.com/hc/en-us/articles/360035982154
+
+ARM Single Board Computer (SBC) Support & Installation Instructions: https://support.networkoptix.com/hc/en-us/articles/360033842053
 
 ## Support
 Contact Kieran for changes.
