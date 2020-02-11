@@ -1,7 +1,7 @@
 #Ness Raspberry Pi VMS Server Setup Script
 #https://github.com/kvellaNess/NxVMSPi
 #Set Machine Hostname to Last 4 digits of Eth0
-macaddy=$(cat /sys/class/net/enp3s0/address | tr -d ':' | grep -o '....$')
+macaddy=$(cat /sys/class/net/eth0/address | tr -d ':' | grep -o '....$')
 sudo hostnamectl set-hostname NessVMS-$macaddy
 #Wait for Auto updgrades to finish
 echo -e "\e[7mWaiting for Auto Upgrades to finish\e[0m"
