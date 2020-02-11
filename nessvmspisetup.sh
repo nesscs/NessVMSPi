@@ -47,7 +47,7 @@ echo -e "\e[7mSet Wallpaper\e[0m"
 sudo wget "https://github.com/kvellaNess/NxVMS/raw/master/NxBG.png" -P /opt/Ness/Wallpaper
 sudo wget "https://github.com/kvellaNess/NxVMS/raw/master/NxLock.png" -P /opt/Ness/Wallpaper
 #Set Wallpaper
-pcmanfm --set-wallpaper /opt/Ness/Wallpaper/NxBG.png'
+pcmanfm --set-wallpaper /opt/Ness/Wallpaper/NxBG.png
 #Finished!
 echo ""
 echo ""
