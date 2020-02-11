@@ -63,7 +63,9 @@ sudo wget -O - https://git.io/nessvmspi | bash
 ```
 Enter your password when prompted. Once the script completes, reboot the Raspberry Pi by typing this command in to the terminal
 
-```sudo reboot```
+```bash
+sudo reboot
+```
 
 Once the Pi reboots, continue the Nx Witness setup from another machine running the NxWitness Client.
 
