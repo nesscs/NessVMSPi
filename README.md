@@ -16,7 +16,7 @@ You have installed the latest version of Raspbian on your Raspberry Pi Hardware
 Press Ctrl-Alt-T to launch the system terminal and type in this command:
 
 ```bash
-sudo wget -O - https://git.io/nessvms | bash
+sudo wget -O - https://git.io/nessvmspi | bash
 ```
 Enter your password when prompted
 
