@@ -1,24 +1,72 @@
+# NxVMSPi OS Setup
+
+## Requirements
+You will need
+1x Raspberry Pi
+1x MicroSD card of U1 Class or Higher
+1x A PC or Laptop to prepare your OS image
+
+1. Download the latest version of Raspbian Buster with desktop from here: https://www.raspberrypi.org/downloads/raspbian/
+2. Download Balena Etcher here: https://www.balena.io/etcher/
+3. Flash your MicroSD card with the Raspbian image using Balena Etcher
+4. Insert MicroSD in to Raspberry Pi
+5. Power Up Raspberry Pi
+6. Run through out of box Wizard for Raspbian:
+Set up location as follows
+
+<img src="readme_images/01.country.png" width="50%" >
+
+Set up password, Recommended Default Password: **Ness1234**
+
+<img src="readme_images/02.password.png" width="50%" >
+
+Set up HDMI Overscan Output
+
+<img src="readme_images/03.overscan.png" width="50%" >
+
+Skip Updaing for now (We will do it later)
+
+<img src="readme_images/04.updates.png" width="50%" >
+
+Skip joining Wifi
+
+<img src="readme_images/05.wifi.png" width="50%" >
+
+Finish up, no need to reboot yet
+
+<img src="readme_images/06.finish.png" width="50%" >
+
+7. Now proceed to software setup via the NxVMSPi Install Script
+
 # NxVMSPi Install Script
 
 Setup Scripts for Ness VMS Servers, this will:
 1. Set Auto Updates for Australian Servers
-2. Delete unecessary pakages
-3. Install required dependencies
-4. Update Server OS
-5. Download & install Nx Witness Media Server.
-6. Download & Set NxWitness Wallpaper
+2. Set Server hostname to last 4 digits of Mac Address
+3. Delete unecessary pakages
+4. Install required dependencies
+5. Update Server OS
+6. Download & install Nx Witness Media Server.
+7. Download & Set NxWitness Wallpaper
 
 ## Requirements
 You have installed the latest version of Raspbian on your Raspberry Pi Hardware
 
-## Installation
+## Server Setup
 
 Press Ctrl-Alt-T to launch the system terminal and type in this command:
 
 ```bash
 sudo wget -O - https://git.io/nessvmspi | bash
 ```
-Enter your password when prompted
+Enter your password when prompted. Once the script completes, reboot the Raspberry Pi
+```sudo reboot```
+
+Once the Pi reboots, continue the Nx Witness setup from another machine running the NxWitness Client.
+
+## Reference
+https://support.networkoptix.com/hc/en-us/articles/360035982154
+https://support.networkoptix.com/hc/en-us/articles/360033842053
 
 ## Support
 Contact Kieran for changes.
