@@ -12,7 +12,7 @@ You will need
 4. Insert MicroSD in to Raspberry Pi
 5. Power Up Raspberry Pi
 6. Run through out of box Wizard for Raspbian:
-Set up location as follows
+Set up location as follows:
 
 <img src="readme_images/01.country.png" width="50%" >
 
@@ -20,19 +20,19 @@ Set up password, Recommended Default Password: **Ness1234**
 
 <img src="readme_images/02.password.png" width="50%" >
 
-Set up HDMI Overscan Output
+Set up HDMI Overscan Output:
 
 <img src="readme_images/03.overscan.png" width="50%" >
 
-Skip Updaing for now (We will do it later)
+Skip Updaing for now (We will do it later):
 
 <img src="readme_images/04.updates.png" width="50%" >
 
-Skip joining Wifi
+Skip joining Wifi:
 
 <img src="readme_images/05.wifi.png" width="50%" >
 
-Finish up, no need to reboot yet
+Finish up, no need to reboot yet:
 
 <img src="readme_images/06.finish.png" width="50%" >
 
@@ -59,7 +59,8 @@ Press Ctrl-Alt-T to launch the system terminal and type in this command:
 ```bash
 sudo wget -O - https://git.io/nessvmspi | bash
 ```
-Enter your password when prompted. Once the script completes, reboot the Raspberry Pi
+Enter your password when prompted. Once the script completes, reboot the Raspberry Pi by typing this command in to the terminal
+
 ```sudo reboot```
 
 Once the Pi reboots, continue the Nx Witness setup from another machine running the NxWitness Client.
