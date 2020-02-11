@@ -2,9 +2,10 @@
 
 ## Requirements
 You will need
-1x Raspberry Pi
-1x MicroSD card of U1 Class or Higher
-1x A PC or Laptop to prepare your OS image
+- Raspberry Pi
+- MicroSD card of U1 Class or Higher
+- Keyboard Mouse & Monitor for Raspberry Pi
+- A PC or Laptop to prepare your OS image
 
 1. Download the latest version of Raspbian Buster with desktop from here: https://www.raspberrypi.org/downloads/raspbian/
 2. Download Balena Etcher here: https://www.balena.io/etcher/
