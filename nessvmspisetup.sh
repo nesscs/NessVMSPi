@@ -2,7 +2,7 @@
 #https://github.com/kvellaNess/NxVMSPi
 #Set Machine Hostname to Last 4 digits of Eth0
 macaddy=$(cat /sys/class/net/eth0/address | tr -d ':' | grep -o '....$')
-sudo hostnamectl set-hostname NessVMS-$macaddy
+sudo hostnamectl set-hostname NessVMSpi-$macaddy
 #Wait for Auto updgrades to finish
 echo -e "\e[7mWaiting for Auto Upgrades to finish\e[0m"
 echo "This may take a while"
