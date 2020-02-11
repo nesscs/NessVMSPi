@@ -13,22 +13,28 @@ You will need
 5. Power Up Raspberry Pi
 6. Run through out of box Wizard for Raspbian:
 Set up location as follows
-<img src="readme_images/01.country.png" width="70%" >
 
-Set up password, Recommended Default Password: Ness1234
-<img src="readme_images/02.password.png" width="70%" >
+<img src="readme_images/01.country.png" width="50%" >
+
+Set up password, Recommended Default Password: **Ness1234**
+
+<img src="readme_images/02.password.png" width="50%" >
 
 Set up HDMI Overscan Output
-<img src="readme_images/03.overscan.png" width="70%" >
+
+<img src="readme_images/03.overscan.png" width="50%" >
 
 Skip Updaing for now (We will do it later)
-<img src="readme_images/04.updates.png" width="70%" >
+
+<img src="readme_images/04.updates.png" width="50%" >
 
 Skip joining Wifi
-<img src="readme_images/05.wifi.png" width="70%" >
+
+<img src="readme_images/05.wifi.png" width="50%" >
 
 Finish up, no need to reboot yet
-<img src="readme_images/06.finish.png" width="70%" >
+
+<img src="readme_images/06.finish.png" width="50%" >
 
 7. Now proceed to software setup via the NxVMSPi Install Script
 
