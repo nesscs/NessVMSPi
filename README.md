@@ -10,9 +10,14 @@ You will need
 1. Download the latest version of Raspbian Buster with desktop from here: https://www.raspberrypi.org/downloads/raspbian/
 2. Download Balena Etcher here: https://www.balena.io/etcher/
 3. Flash your MicroSD card with the Raspbian image using Balena Etcher
-4. Insert MicroSD in to Raspberry Pi
-5. Power Up Raspberry Pi
-6. Run through out of box Wizard for Raspbian:
+4. On the computer you flashed the MicroSD Card, Open the SD card in explorer and edit the file config.txt
+    - Uncomment (Remove the #) the line hdmi_force_hotplug=1
+    - This allows USB storage to be automounted on boot even if a screen is not attached.
+5. **Optional** In the root directory of the MicroSD create a empty text file with no extension called: ssh 
+    - This allows remote SSH in to the Raspberry Pi for troubleshooting without a monitor.
+6. Insert MicroSD in to Raspberry Pi
+7. Power Up Raspberry Pi
+8. Run through out of box Wizard for Raspbian:
 
 - Set up location as follows:
 
@@ -38,7 +43,7 @@ You will need
 
 <img src="readme_images/06.finish.png" width="50%" >
 
-7. Now proceed to software setup via the NxVMSPi Install Script
+9. Now proceed to software setup via the NxVMSPi Install Script
 
 # NxVMSPi Install Script
 
