@@ -1,5 +1,9 @@
 # NxVMSPi OS Setup
 
+## Warning
+Although these scripts are public facing, they are not intended for general consumption. Do not blindly run these scrips, they are unsupported. 
+You WILL NOT receive technical support if you run these without direction.
+
 ## Requirements
 You will need
 - Raspberry Pi
@@ -64,7 +68,7 @@ You have installed the latest version of Raspbian on your Raspberry Pi Hardware
 Press Ctrl-Alt-T to launch the system terminal and type in this command:
 
 ```bash
-sudo wget -O - https://git.io/nessvmspi | bash
+sudo wget -O - https://nesscs.com/nessvmspi5 | bash
 ```
 Enter your password when prompted. Once the script completes, reboot the Raspberry Pi by typing this command in to the terminal
 
@@ -79,7 +83,7 @@ Once the Pi reboots, continue the Nx Witness setup from another machine running 
 - [ARM Single Board Computer (SBC) Support & Installation Instructions](https://support.networkoptix.com/hc/en-us/articles/360033842053)
 
 ## Support
-Contact Kieran for changes.
+There is no support! Contact Kieran for changes.
 
 ## License
 MIT License

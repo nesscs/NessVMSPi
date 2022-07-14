@@ -1,5 +1,8 @@
 #Ness Raspberry Pi VMS Server Setup Script
 #https://github.com/kvellaNess/NxVMSPi
+#This script is for Nx Witness V4 on a Raspberry Pi
+#This script is unsupported, do not blindly run it
+
 #Set Machine Hostname to Last 4 digits of Eth0
 macaddy=$(cat /sys/class/net/eth0/address | tr -d ':' | grep -o '....$')
 sudo hostnamectl set-hostname NessVMSpi-$macaddy
@@ -34,20 +37,20 @@ echo ""
 echo -e "\e[7mDownload NxWitness\e[0m"
 echo ""
 echo ""
-wget "http://updates.networkoptix.com/default/29987/arm/nxwitness-server-4.0.0.29987-linux_arm32.deb" -P ~/Downloads
+wget "https://updates.networkoptix.com/default/4.2.0.34860/arm/nxwitness-server-4.2.0.34860-linux_arm32-patch.deb" -P ~/Downloads
 #Install NX Server
 echo ""
 echo ""
 echo -e "\e[7mInstall NxWitness\e[0m"
 echo ""
 echo ""
-sudo gdebi --non-interactive ~/Downloads/nxwitness-server-4.0.0.29987-linux_arm32.deb
+sudo gdebi --non-interactive ~/Downloads/nxwitness-server-4.2.0.34860-linux_arm32-patch.deb
 #Download Wallpaper
 echo -e "\e[7mSet Wallpaper\e[0m"
-sudo wget "https://github.com/kvellaNess/NxVMS/raw/master/NxBG.png" -P /opt/Ness/Wallpaper
-sudo wget "https://github.com/kvellaNess/NxVMS/raw/master/NxLock.png" -P /opt/Ness/Wallpaper
+sudo wget "https://github.com/nesscs/NxVMS/raw/master/nx4bg.png" -P /opt/Ness/Wallpaper
+sudo wget "https://github.com/nesscs/NxVMS/raw/master/nx4lock.png" -P /opt/Ness/Wallpaper
 #Set Wallpaper
-pcmanfm --set-wallpaper /opt/Ness/Wallpaper/NxBG.png
+pcmanfm --set-wallpaper /opt/Ness/Wallpaper/nx4bg.png
 #Finished!
 echo ""
 echo ""
