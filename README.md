@@ -1,4 +1,4 @@
-# NxVMSPi OS Setup
+# NessVMSPi OS Setup
 
 ## Warning
 Although these scripts are public facing, they are not intended for general consumption. Do not blindly run these scrips, they are unsupported. 
@@ -49,7 +49,7 @@ You will need
 
 9. Now proceed to software setup via the NxVMSPi Install Script
 
-# NxVMSPi Install Script
+# NessVMSPi Install Script
 
 Setup Scripts for Ness VMS Servers, this will:
 1. Set Auto Updates for Australian Servers
@@ -76,7 +76,7 @@ Enter your password when prompted. Once the script completes, reboot the Raspber
 sudo reboot
 ```
 
-Once the Pi reboots, continue the Nx Witness setup from another machine running the NxWitness Client.
+Once the Pi reboots, continue the Nx Witness setup from another machine running the VMS Client.
 
 ## Reference
 - [How to build an NVR with Nx Witness VMS](https://support.networkoptix.com/hc/en-us/articles/360035982154)
